@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { SiShopware } from "react-icons/si";
 import { MdOutlineCancel } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
@@ -31,7 +30,10 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware /> <span>Shoppy</span>
+              <div className="w-18 h-12 flex gap-6 ">
+                <img src='/SIDSYNC.png' className="rounded-full"/>
+                </div>
+               
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
